@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class swivel : MonoBehaviour {
@@ -16,6 +16,10 @@ public class swivel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+<<<<<<< HEAD
+		transform.position = initialPos + direction * amount * Mathf.Sin( Time.time ) + balls;
+=======
 		
+>>>>>>> master
 	}
 }
