@@ -4,6 +4,8 @@ using System.Collections;
 public class swivel : MonoBehaviour {
 
 	public float amount;
+	public Vector3 direction = Vector3.up;
+
 	private float pos;
 	private Vector3 initialPos;
 	// Use this for initialization
@@ -14,6 +16,6 @@ public class swivel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = initialPos + Vector3.up * amount * Mathf.Sin( Time.time );
+		transform.position = initialPos + direction * amount * Mathf.Sin( Time.time );
 	}
 }
